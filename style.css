@@ -36,3 +36,10 @@ body{
    .titulo-principal span{
     color: var(--cor-do-titulo);
    }
+
+   .botao{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--cor-botao-escuro);
+    color: var(--cor-letrinha);
+
+   }
