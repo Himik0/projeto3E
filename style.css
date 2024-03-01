@@ -8,16 +8,12 @@
     --cor-principal: #7ACB90;
     --cor-letrinha: #111212;
     --cor-botao-escuro: rgba(170, 220, 147, 0.5);
-
-
-
-
 }
 
 body{
     background-color: var(--cor-principal);
-   color:  var(--cor-de-fundo);
-   font-family: 'Josefin Sans', sans-serif;
+    color:  var(--cor-de-fundo);
+    font-family: 'Josefin Sans', sans-serif;
 
 }
 
@@ -28,5 +24,12 @@ body{
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; 
+   }
+
+   .titulo-principal{text-align: left;
+    width: 100%;
+    font-size: 32px;
+    color: var(--cor-do-titulo);
+
    }
