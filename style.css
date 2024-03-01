@@ -15,8 +15,8 @@
 }
 
 body{
-    background-color:  var(--cor-de-fundo);
-   color:  var(--cor-do-titulo);
+    background-color: var(--cor-principal);
+   color:  var(--cor-de-fundo);
    font-family: 'Josefin Sans', sans-serif;
 
 }
