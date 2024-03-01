@@ -41,6 +41,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     background-color: var(--cor-botao-escuro);
     color: var(--cor-letrinha);
+    display: flex;
     justify-content: center;
     padding: 1em;
 
