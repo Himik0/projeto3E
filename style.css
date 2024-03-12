@@ -47,5 +47,6 @@ body{
     font-size: 18px;
     border-bottom:  4px solid var(--cor-botao-escuro);
     border-left: 2px solid var(--cor-do-titulo);
+    border-top: none;
 
    }
