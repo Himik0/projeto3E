@@ -64,6 +64,23 @@ body{
     background-color: var(--cor-de-fundo);
     border-bottom: 4px solid var(--cor-letrinha);
    }
+   .abas-textos{
+    background-color: var(--cor-principal);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+   }
+   .aba-conteudo.ativo{
+    display: block;
+   }
+   .aba-conteuo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+   }
+   .aba-conteuo-titulo-secundario{
+    text-align: center;
+    color: var(--cor-letrinha);
+    text-transform: uppercase;
+   }
 
   @media screen and (min-width: 768px){
     .botoes{
