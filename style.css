@@ -1,8 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
-:root{
 
-    --cor-de-fundo:#52794E;
+:root {
+
+    --cor-de-fundo: #52794E;
     --cor-do-titulo: #97EE29;
     --cor-do-subtitulo: #8CC2E0;
     --cor-principal: #7ACB90;
@@ -10,34 +10,34 @@
     --cor-botao-escuro: rgba(170, 220, 147, 0.5);
 }
 
-body{
+body {
     background-color: var(--cor-principal);
-    color:  var(--cor-de-fundo);
+    color: var(--cor-de-fundo);
     font-family: 'Josefin Sans', sans-serif;
 
 }
 
-.conteudo-principal{
+.conteudo-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto; 
-   }
+    margin: 0 auto;
+}
 
-   .titulo-principal{
+.titulo-principal {
     text-align: left;
     width: 100%;
     font-size: 32px;
-   }
+}
 
-   .titulo-principal span{
+.titulo-principal span {
     color: var(--cor-do-titulo);
-   }
+}
 
-   .botao{
+.botao {
     font-family: 'Josefin Sans', sans-serif;
     background-color: var(--cor-botao-escuro);
     color: var(--cor-letrinha);
@@ -47,55 +47,62 @@ body{
     font-size: 18px;
     align-items: center;
     width: 100%;
-    border-bottom:  4px solid var(--cor-do-titulo);
+    border-bottom: 4px solid var(--cor-do-titulo);
     border-left: 2px solid var(--cor-do-titulo);
     border-right: 2px solid var(--cor-do-titulo);
     border-top: none;
 
-   }
-   .botao:first-child{
-    border-radius: 40px 40px 0 0;
-   }
+}
 
-   .botoes{
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botoes {
     display: block;
-   }
-   .ativo{
+}
+
+.ativo {
     background-color: var(--cor-de-fundo);
     border-bottom: 4px solid var(--cor-letrinha);
-   }
-   .abas-textos{
+}
+
+.abas-textos {
     background-color: var(--cor-principal);
     padding: 40px;
     border-radius: 0 0 40px 40px;
-   }
-   .aba-conteudo.ativo{
+}
+
+.aba-conteudo.ativo {
     display: block;
-   }
-.aba-conteudo{
+}
+
+.aba-conteudo {
     display: none;
 }
-   .aba-conteudo-titulo-principal{
+
+.aba-conteudo-titulo-principal {
     font-size: 28px;
     text-align: center;
-   }
-   .aba-conteudo-titulo-secundario{
+}
+
+.aba-conteudo-titulo-secundario {
     text-align: center;
     color: var(--cor-letrinha);
     text-transform: uppercase;
-   }
+}
 
-  @media screen and (min-width: 768px){
-    .botoes{
+@media screen and (min-width: 768px) {
+    .botoes {
         display: flex;
     }
-    .botao:first-child{
+
+    .botao:first-child {
         border-radius: 40px 0 0 0;
     }
-    .botao:last-child{
+
+    .botao:last-child {
         border-radius: 0 40px 0 0;
     }
-  
-  }
-    
-  
+
+}
