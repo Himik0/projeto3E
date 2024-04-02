@@ -72,11 +72,14 @@ body{
    .aba-conteudo.ativo{
     display: block;
    }
-   .aba-conteuo-titulo-principal{
+.aba-conteudo{
+    display: none;
+}
+   .aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
    }
-   .aba-conteuo-titulo-secundario{
+   .aba-conteudo-titulo-secundario{
     text-align: center;
     color: var(--cor-letrinha);
     text-transform: uppercase;
