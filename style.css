@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: var(--cor-letrinha);
+    background-color: var(--cor-principal);
     color: var(--cor-de-fundo);
     font-family: 'Josefin Sans', sans-serif;
 
