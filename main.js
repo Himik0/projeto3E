@@ -13,7 +13,11 @@ textos[i].classList.add("ativo");
     }
 }
 const contadores = document.querySelectorAll("contador");
-const tempoObjetivo1 = new Date("2025-12-25T00:59:59");
+const tempoObjetivo1 = new Date("2025-12-28T23:59:59");
 let tempoAtual = new Date();
 
+
+for(let i=0; i< contadores.length; i++){
+    contadores[i].textContent = calcularTempo(Tempo[i]);
+}
 contadores[0].textContent = tempoObjetivo1 - tempoAtual;
