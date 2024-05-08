@@ -1,18 +1,18 @@
 const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 
-for( let i = 0; i <botoes.length; i++){
-    botoes[i].onclick = function(){
-        for(let j = 0; j< botoes.length; j++){
+for (let i = 0; i < botoes.length; i++) {
+    botoes[i].onclick = function () {
+        for (let j = 0; j < botoes.length; j++) {
             botoes[j].classList.remove("ativo");
             textos[j].classList.remove("ativo");
-
         }
-botoes[i].classList.add("ativo");
-textos[i].classList.add("ativo");
+        botoes[i].classList.add("ativo");
+        textos[i].classList.add("ativo");
     }
 }
-const contadores = document.querySelectorAll("contador");
+
+const contadores = document.querySelectorAll(".contador"); // Corrected selector
 const tempoObjetivo1 = new Date("2025-12-28T23:59:59");
 const tempoObjetivo2 = new Date("2025-12-28T23:59:59");
 const tempoObjetivo3 = new Date("2025-12-28T23:59:59");
@@ -22,15 +22,14 @@ const tempos = [
     tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4
 ]
 
-for(let i=0; i< contadores.length; i++){
+for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calcularTempo(tempos[i]);
 }
-contadores[0].textContent = calcularTempo(tempoObjetivo1);
 
-function calcularTempo(tempoObjetivo1){
+function calcularTempo(tempoObjetivo) {
     let tempoAtual = new Date();
-    let tempoAtual = tempoObjetivo1 - tempoAtual;
-    let segundos = Math.floor(tempofinal / 1000)
+    let diferenca = tempoObjetivo - tempoAtual; // Renamed variable
+    let segundos = Math.floor(diferenca / 1000);
     let minutos = Math.floor(segundos / 60);
     let horas = Math.floor(minutos / 60);
     let dias = Math.floor(horas / 24);
@@ -39,8 +38,5 @@ function calcularTempo(tempoObjetivo1){
     minutos %= 60;
     horas %= 24;
 
-    return dias + "dias"
-    + horas + "horas"
-    + minutos + "minutos"
-    + segundos + "segundos";
+    return dias + " dia(s), " + horas + " hora(s), " + minutos + " minuto(s), " + segundos + " segundo(s)";
 }
