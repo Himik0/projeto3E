@@ -14,11 +14,16 @@ textos[i].classList.add("ativo");
 }
 const contadores = document.querySelectorAll("contador");
 const tempoObjetivo1 = new Date("2025-12-28T23:59:59");
-let tempoAtual = new Date();
+const tempoObjetivo2 = new Date("2025-12-28T23:59:59");
+const tempoObjetivo3 = new Date("2025-12-28T23:59:59");
+const tempoObjetivo4 = new Date("2025-12-28T23:59:59");
 
+const tempos = [
+    tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4
+]
 
 for(let i=0; i< contadores.length; i++){
-    contadores[i].textContent = calcularTempo(Tempo[i]);
+    contadores[i].textContent = calcularTempo(tempos[i]);
 }
 contadores[0].textContent = calcularTempo(tempoObjetivo1);
 
