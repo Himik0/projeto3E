@@ -63,7 +63,7 @@ body {
 }
 
 .ativo {
-    background-color: var(--cor-de-fundo);
+    background-color: var(--cor-botao-escuro);
     border-bottom: 4px solid var(--cor-letrinha);
 }
 
