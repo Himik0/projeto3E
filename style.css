@@ -34,7 +34,7 @@ body {
 }
 
 .titulo-principal span {
-    color: var(--cor-do-titulo);
+    color: var(--cor-principal);
 }
 
 .botao {
@@ -63,7 +63,7 @@ body {
 }
 
 .ativo {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-de-fundo);
     border-bottom: 4px solid var(--cor-letrinha);
 }
 
